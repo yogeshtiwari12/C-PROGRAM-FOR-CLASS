@@ -1,0 +1,11 @@
+
+#include<stdio.h>
+int main()
+{
+int t1,t2, area;
+    printf("Enter angle  : ");
+    scanf("%d%d",&t1,&t2);
+
+    printf("third angle is = %d",180-(t1+t2));
+    
+}
