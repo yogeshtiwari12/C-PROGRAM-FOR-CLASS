@@ -1,0 +1,36 @@
+
+//Swapping two numbers using 3rd variable
+#include <stdio.h> 
+int main() 
+{ 
+    int a, b, c; 
+  
+    printf("Enter the value of a and b\n"); 
+    scanf("%d%d", &a, &b); 
+  
+    printf("BeforeSwappinga = %d and b = %d\n",a,b); 
+  
+    c = a; 
+    a = b; 
+    b = c; 
+  
+    printf("After Swappinga = %d and b = %d\n",a,b); 
+  
+
+
+
+
+    int e;
+    printf("Enter the value of a and b\n"); 
+    scanf("%d%d", &c, &e); 
+  
+    printf("BeforeSwappinga = %d and b = %d\n",c,e); 
+    
+    c=c^e;
+    e=c^e;
+    c=c^e;
+    
+    printf("After Swappinga = %d and b = %d\n",c,e); 
+  
+    return 0;
+}
