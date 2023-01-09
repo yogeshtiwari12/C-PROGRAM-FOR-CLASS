@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <math.h> 
+
+
+
+int getDiameter(int radius);
+int getCircumference(int radius);
+int getArea(int radius);
+
+
+int main() 
+{
+    int radius, dia, circ, area;
+    
+    
+    printf("Enter radius of circle: ");
+    scanf("%d", &radius);
+    
+    dia  = getDiameter(radius);      
+    circ = getCircumference(radius);  
+    area = getArea(radius);           
+    
+    printf("Diameter of the circle = %d units\n", dia);
+    printf("Circumference of the circle = %d units\n", circ);
+    printf("Area of the circle = %d sq. units", area);
+    
+    return 0;
+}
+
+
+
+int getDiameter(int radius) 
+{
+    return (2 * radius);
+}
+
+int getCircumference(int radius) 
+{
+    return (2 * M_PI * radius); 
+}
+
+
+
+int getArea(int radius)
+{
+    return (M_PI * radius * radius);
+}
