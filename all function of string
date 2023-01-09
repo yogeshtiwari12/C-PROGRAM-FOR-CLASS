@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+ 
+int main(){
+int i,len;
+char arr[99],arr2[999];
+printf("eneter string = ");
+gets(arr);
+
+printf("lowewr case to upper case = %s\n",strupr(arr));
+printf("upper case to lower case = %s\n",strlwr(arr));
+strcpy(arr2,arr);
+printf("copy one array to another = %s\n",arr2);
+printf("length of string = %d",strlen(arr));
+
+
+}
