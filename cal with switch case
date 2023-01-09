@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main(){
+int x,y;
+char c;
+
+
+printf("enter your operator = ");
+scanf("%c",&c);
+
+printf("enter x = ");
+scanf("%d",&x);
+
+
+printf("enter y = ");
+scanf("%d",&y);
+
+
+
+
+    switch(c){
+
+    case '+':
+    printf("your sum is = %d",x+y);
+    break;
+
+     case '-':
+    printf("your sub is = %d",x-y);
+    break;
+
+     case '*':
+    printf("your sum is = %d",x*y);
+    break;
+
+     case '/':
+    printf("your sum is = %d",x/y);
+    break;
+
+    default:
+    printf("please enter valid output");
+}
+}
