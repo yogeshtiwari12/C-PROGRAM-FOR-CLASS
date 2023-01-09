@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void) {
+    int i;
+
+        for (i = 65; i < 91; i++) {
+        printf("%d: %c\n", i, (char)i);
+    }
+    for (i = 97; i < 123; i++) {
+        printf("%d: %c\n", i, (char)i);
+    }
+    return 0;
+}
