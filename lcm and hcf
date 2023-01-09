@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,p,q,lcm,gcd,temp;
+    printf("enter two num  = ");
+    scanf("%d%d",&a,&b);
+
+
+    p = a;
+    q = b;
+
+
+while(q>0){
+    temp = p;
+    q = p%q;
+    p = temp;
+
+}
+gcd = p;
+
+lcm = (a*b)/gcd;
+
+printf("gcd = %d\n",gcd);
+printf("lcm  = %d",lcm);
+    return 0;
+}
