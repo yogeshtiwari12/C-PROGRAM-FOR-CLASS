@@ -1,0 +1,29 @@
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int number, power, result;
+    float t;
+    
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    
+
+    printf("Enter the power: ");
+    scanf("%d", &power);
+    
+    
+    result = pow(number, power);
+    printf("power is = %d\n", result);
+    
+
+    t = sqrt(number);
+    
+    
+    printf("Square root of %d = %.2f\n", number, t);
+    
+    return 0;
+}
