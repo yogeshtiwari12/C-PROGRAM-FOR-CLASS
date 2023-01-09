@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+int n,i = 0,a,b,c,j,count  =0;
+char arr[996];
+printf("enter string = ");
+scanf("%s",arr);
+
+j = strlen(arr)-1;
+while(j>0){
+    if(arr[i]==arr[j]){
+        count = 1;
+    }
+    i++;
+    j--;
+}
+if(count==1){
+    printf("string is palindrome");
+}
+else{
+    printf("string is not palindrome");
+}
+}
