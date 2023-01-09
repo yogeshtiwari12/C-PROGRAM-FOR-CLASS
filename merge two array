@@ -1,0 +1,68 @@
+#include <stdio.h>
+
+#define MAX_SIZE 100
+
+int main() {
+    int a[MAX_SIZE], b[MAX_SIZE], c[MAX_SIZE * 2];
+    int size1, size2, size3, i, j, k;
+
+    
+    printf("Enter size of first array: ");
+    scanf("%d", &size1);
+
+    /* Input elements of first array */
+    printf("Enter elements of first array: ");
+    for (i=0; i<size1; i++) {
+        scanf("%d", &a[i]);
+    }
+
+    
+    printf("Enter size of second array: ");
+    scanf("%d", &size2);
+
+    
+    printf("Enter elements of second array: ");
+    for (i=0; i<size2; i++) {
+        scanf("%d", &b[i]);
+    }
+
+  
+    i = 0;
+    j = 0;
+    k = 0;
+    while (i < size1 && j < size2) {
+        if (a[i] < b[j]) {
+            c[k] = a[i];
+            i++;
+        } else {
+            c[k] = b[j];
+            j++;
+        }
+        k++;
+    }
+
+   
+    while (i < size1) {
+        c[k] = a[i];
+        i++;
+        k++;
+    }
+
+    
+    while (j < size2) {
+        c[k] = b[j];
+        j++;
+        k++;
+    }
+
+    /* Set the size of merged array */
+    size3 = size1 + size2;
+
+    /* Print the merged array */
+    printf("\nMerged array is: ");
+    for (i=0; i<size3; i++) {
+        printf("%d ", c[i]);
+    }
+
+    return 0;
+}
