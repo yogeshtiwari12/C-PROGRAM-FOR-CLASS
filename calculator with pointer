@@ -1,0 +1,84 @@
+#include<stdio.h>
+int main(){
+    int sum(int *p ,int *q);
+       int sub(int *p ,int *q);
+          int mul(int *p ,int *q);
+             int mod(int *p ,int *q);
+                int divide(int *p ,int *q);
+
+
+    int a,b;
+    char ch;
+
+       printf("enter operator : ");
+    scanf("%c",&ch);
+
+    printf("enter a = ");
+    scanf("%d",&a);
+ 
+    printf("enter b = ");
+    scanf("%d",&b);
+
+
+switch(ch){
+
+    case '+':
+    printf("sum = %d",sum(&a,&b));
+
+break;
+
+
+    case '-':
+    printf("sub = %d",sub(&a,&b));
+
+
+break;
+
+
+    case '*':
+    printf("sub = %d",mul(&a,&b));
+
+break;
+
+
+    case '/':
+    printf("mod = %d",mod(&a,&b));
+
+
+break;
+    case '%':
+    printf("divide = %d",divide(&a,&b));
+
+
+break;
+default:
+
+printf("enter a correct output");
+}
+
+
+   
+
+
+}
+int sum(int *p,int *q){
+    int  x =  *p+*q;
+    return x;
+}
+
+int sub(int *p,int *q){
+    int  s =  *p-*q;
+    return s;
+}
+int mul(int *p,int *q){
+    int  m =  *p * *q;
+    return m;
+}
+int mod(int *p,int *q){
+    int  k =  (*p)/(*q);
+    return k;
+}
+int divide(int *p,int *q){
+    int  d =  *p%*q;
+    return d;
+}
